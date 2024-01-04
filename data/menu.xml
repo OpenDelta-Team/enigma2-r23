@@ -83,8 +83,8 @@
 			<item weight="15" level="0" text="Factory reset" entryID="factory_reset"><screen module="FactoryReset" screen="FactoryReset"/></item>
 			<item weight="15" level="0" text="Software update" entryID="software_update"><screen module="SoftwareUpdate" screen="UpdatePlugin"/></item>
 		</menu>
-                <menu level="0" text="Option Multiboot Flash image">
-	                <item text="Flash image" entryID="flash_image" requires="canFlashWithOfgwrite" ><screen module="FlashImage" screen="SelectImage"/></item>
+                <menu text="Option Multiboot Flash image">
+			<item weight="15" level="0" text="Flash image" entryID="flash_image" requires="canFlashWithOfgwrite"><screen module="FlashImage" screen="SelectImage"/></item>
 			<item text="Multiboot image selector" entryID="multiboot" requires="canMultiBoot"><screen module="FlashImage" screen="MultibootSelection">1</screen></item>
 	        </menu>
 		<menu text="Standby / restart" entryID="standby_restart_list">
